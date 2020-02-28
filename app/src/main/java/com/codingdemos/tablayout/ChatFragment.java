@@ -34,7 +34,7 @@ public class ChatFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_chat) {
-            Toast.makeText(getActivity(), "Clicked on " + item.getTitle(), Toast.LENGTH_SHORT)
+            Toast.makeText(getActivity(), "Clicked on crop calender" , Toast.LENGTH_SHORT)
                     .show();
             Intent intent = new Intent(getActivity(), webView.class);
             startActivity(intent);

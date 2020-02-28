@@ -1,6 +1,7 @@
 package com.codingdemos.tablayout;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -35,6 +36,8 @@ public class ChatFragment extends Fragment {
         if (item.getItemId() == R.id.action_chat) {
             Toast.makeText(getActivity(), "Clicked on " + item.getTitle(), Toast.LENGTH_SHORT)
                     .show();
+            Intent intent = new Intent(getActivity(), webView.class);
+            startActivity(intent);
         }
         return true;
     }

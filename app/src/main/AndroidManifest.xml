@@ -11,19 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".farm_main"></activity>
+        <activity
+            android:name=".farm_log"
+            android:label="@string/title_activity_farm_log"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.login.login_farm"
-            android:label="@string/title_activity_login_farm"></activity>
+            android:label="@string/title_activity_login_farm" />
         <activity android:name=".registerScreen" />
-        <activity android:name=".UserSelector" />
+        <activity android:name=".UserSelector">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            </activity>
         <activity android:name=".yojanas" />
         <activity android:name=".webView" />
         <activity android:name=".login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
     </application>

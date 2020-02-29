@@ -5,6 +5,6 @@
   <item
     android:id="@+id/action_chat"
     android:icon="@drawable/ic_chat_white_24dp"
-    android:title="Chat"
+    android:title="crop calender"
     app:showAsAction="ifRoom" />
 </menu>
